@@ -1,1 +1,3 @@
-console.log("This is working!");
+import { load } from './load'
+
+load();
