@@ -16,7 +16,7 @@
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _load__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./load */ \"./src/load.js\");\n\n\n(0,_load__WEBPACK_IMPORTED_MODULE_0__.load)();\n\n//# sourceURL=webpack://resturant/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _load__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./load */ \"./src/load.js\");\n/* harmony import */ var _menu__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./menu */ \"./src/menu.js\");\n\n\n\nconsole.log(\"This is working!\")\n;(0,_load__WEBPACK_IMPORTED_MODULE_0__.load)();\n\n//# sourceURL=webpack://resturant/./src/index.js?");
 
 /***/ }),
 
@@ -26,7 +26,17 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _loa
   \*********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   load: () => (/* binding */ load)\n/* harmony export */ });\nfunction load() {\n    let content = document.querySelector('#content');\n\n    let title = document.createElement('h1');\n    title.innerText = 'Awesome Resturant';\n    content.appendChild(title);\n\n    let image = document.createElement('img');\n    image.src = '/src/image.jpg';\n    content.appendChild(image);\n\n    let text = document.createElement('p');\n    text.innerText = 'This resturant is sooooo awesome!!';\n    content.appendChild(text);\n}\n\n\n\n//# sourceURL=webpack://resturant/./src/load.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   load: () => (/* binding */ load)\n/* harmony export */ });\nfunction load() {\n    let content = document.querySelector('#content');\n\n    let title = document.createElement('h1');\n    title.innerText = 'Awesome Resturant';\n    content.appendChild(title);\n\n    let image = document.createElement('img');\n    image.src = '/src/image.jpg';\n    content.appendChild(image);\n\n    let text = document.createElement('p');\n    text.innerText = 'This resturant is sooooo awesome!!';\n    content.appendChild(text);\n\n    //Buttons\n\n    let home = document.createElement('button');\n    home.classList.add('home');\n    home.innerText = 'Home';\n    content.appendChild(home);\n\n    let menu = document.createElement('button');\n    menu.classList.add('menu');\n    menu.innerText = 'menu';\n    content.appendChild(menu);\n\n    let contact = document.createElement('button');\n    contact.classList.add('contact');\n    contact.innerText = 'contact';\n    content.appendChild(contact);\n}\n\n\n\n//# sourceURL=webpack://resturant/./src/load.js?");
+
+/***/ }),
+
+/***/ "./src/menu.js":
+/*!*********************!*\
+  !*** ./src/menu.js ***!
+  \*********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   menu: () => (/* binding */ menu)\n/* harmony export */ });\n\nfunction menu() {\n    let content = document.querySelector('#content');\n\n    let soda = document.createElement('h1');\n    soda.innerText = 'Sodas';\n    content.appendChild(soda);\n\n    let text = document.createElement('p');\n    text.innerText = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum justo sem, consequat vel suscipit eget, congue nec dui. Donec aliquam.';\n    content.appendChild(text);\n}\n\n\n\n//# sourceURL=webpack://resturant/./src/menu.js?");
 
 /***/ })
 
