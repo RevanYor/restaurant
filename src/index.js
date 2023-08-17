@@ -1,13 +1,10 @@
 import { load } from './load'
 import { menu } from './menu';
 import { contact } from './contact';
-import { butts } from './butts';
-import { tabs } from './butts';
+import { butts, tabs } from './butts';
 
 console.log("This is working!")
 load();
-butts();
-tabs();
 
 let homeB = document.querySelector('.home');
 let menuB = document.querySelector('.menu');
@@ -23,8 +20,6 @@ contactB.addEventListener('click', () => {
     content.innerHTML = '';
     contact();
 });
-
-
 homeB.addEventListener('click', () => {
     let content = document.querySelector('#content');
     content.innerHTML = '';

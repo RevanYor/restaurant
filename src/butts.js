@@ -41,5 +41,4 @@ homeB.addEventListener('click', () => {
 });
 }
 
-export {tabs};
-export {butts}
+export {butts, tabs};

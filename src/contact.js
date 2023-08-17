@@ -1,5 +1,6 @@
-import { load } from './load'
-import { menu } from './menu';
+import { menu } from "./menu";
+import { load } from "./load";
+
 
 function contact() {
     let content = document.querySelector('#content');
@@ -27,28 +28,11 @@ function contact() {
     contact.classList.add('contact');
     contact.innerText = 'contact';
     content.appendChild(contact);
-
-    let homeB = document.querySelector('.home');
-let menuB = document.querySelector('.menu');
-let contactB = document.querySelector('.contact');
-
-menuB.addEventListener('click', () => {
-    let content = document.querySelector('#content');
-    content.innerHTML = '';
-    menu;
-});
-contactB.addEventListener('click', () => {
-    let content = document.querySelector('#content');
-    content.innerHTML = '';
-    contact;
-});
-
-
-homeB.addEventListener('click', () => {
-    let content = document.querySelector('#content');
-    content.innerHTML = '';
-    load;
-});
 }
+ let home = document.querySelector('.home');
+ home.addEventListener('click', load);
+ let menuB = document.querySelector('.menu');
+ menuB.addEventListener('click', menu);
+
 
 export { contact };
